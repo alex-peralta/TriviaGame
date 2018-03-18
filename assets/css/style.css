@@ -29,7 +29,8 @@ img {
 
 body {
   background-image: url("../images/baseball.jpg");
-  background-repeat: repeat;
+  background-repeat: repeat-x;
+  background-position: center; 
   font-family: 'Karla', sans-serif;
 }
 

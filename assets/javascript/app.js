@@ -93,12 +93,6 @@ $(document).ready(function () {
         index = Math.floor(Math.random()*options.length);
         pick = options[index];
     
-    //	if (pick.shown) {
-    //		//recursive to continue to generate new index until one is chosen that has not shown in this game yet
-    //		displayQuestion();
-    //	} else {
-    //		console.log(pick.question);
-            //iterate through answer array and display
             $("#questionblock").html("<h2>" + pick.question + "</h2>");
             for(var i = 0; i < pick.choice.length; i++) {
                 var userChoice = $("<div>");
@@ -107,10 +101,7 @@ $(document).ready(function () {
                 //assign array position to it so can check answer
                 userChoice.attr("data-guessvalue", i);
                 $("#answerblock").append(userChoice);
-    //		}
     }
-    
-    
     
     //click function to select answer and outcomes
     $(".answerchoice").on("click", function () {
@@ -124,7 +115,6 @@ $(document).ready(function () {
             userGuess="";
             $("#answerblock").html("<p>Correct!</p>");
             hidepicture();
-    
         } else {
             stop();
             wrongCount++;
@@ -155,11 +145,9 @@ $(document).ready(function () {
             correctCount = 0;
             wrongCount = 0;
             unanswerCount = 0;
-    
         } else {
             runTimer();
             displayQuestion();
-    
         }
         }, 3000);
     
@@ -174,7 +162,5 @@ $(document).ready(function () {
         }
         runTimer();
         displayQuestion();
-    
     })
-    
     })
