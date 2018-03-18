@@ -7,4 +7,4 @@ of a Trivia Game with JQuery to manipulate the DOM elements. Checkout the [game]
 
 ### Game URL
 ##### https://alex-peralta.github.io/TriviaGame/
-![Site UI](https://github.com/alex-peralta/TriviaGame/tree/master/assets/images/site.jpg)
+![Site UI](https://github.com/alex-peralta/TriviaGame/blob/master/assets/images/site.jpg?raw=true)
